@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid limegreen; */
 }
 
 :root {
@@ -78,6 +79,8 @@ ul.head-ul li:first-child {
   cursor: pointer;
 }
 
+/* --------------------------Hero--------------- */
+
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -103,6 +106,61 @@ ul.head-ul li:first-child {
 
 .header-content_right img {
   width: 60rem;
+}
+
+nav .fa-bars {
+  display: none;
+}
+
+/* ---------Nav media query----------- */
+
+@media screen and (max-width: 1100px) {
+  .head-ul {
+    display: none;
+  }
+  nav .fa-bars {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+
+  #nav-logo {
+    margin-left: 0;
+  }
+  nav {
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* ----------Hero media query---------- */
+
+@media screen and (max-width: 1100px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-content_left h1 {
+    font-size: 4rem;
+    padding-top: 4rem;
+  }
+
+  .header-content_right img {
+    max-width: 80%;
+  }
+  .header-content_left {
+    margin-left: 0;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-content_left h1 {
+    font-size: 3rem;
+  }
 }
 
 /* --------------------------Section-1------------------- */
@@ -153,6 +211,30 @@ ul.head-ul li:first-child {
   font-weight: 500;
 }
 
+/* -------media query-------- */
+
+@media screen and (max-width: 1100px) {
+  .section-1_content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-1_left img {
+    max-width: 90%;
+    margin-left: 0;
+  }
+
+  .section-1_right {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section-1_heading h2 {
+    font-size: 2.5rem;
+  }
+}
+
 /* ------------------------------Section-2----------------------------- */
 .section-2 {
   padding-bottom: 10rem;
@@ -177,7 +259,7 @@ ul.head-ul li:first-child {
   /* border: 1px solid blue; */
   align-items: center;
   gap: 3rem 0;
-  width: 15%;
+  width: 20rem;
   border-radius: 2rem;
   box-shadow: 2px 2px 5px 2px #bfbfbf;
 }
@@ -228,4 +310,13 @@ ul.head-ul li:first-child {
   text-align: center;
   padding-bottom: 1rem;
   font-weight: 500;
+}
+
+/* -------media query------ */
+
+@media screen and (max-width: 1000px) {
+  .section-2_card {
+    flex-wrap: wrap;
+    gap: 3rem 6rem;
+  }
 }

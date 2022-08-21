@@ -22,7 +22,7 @@
 
 ## 📌 Time Taken To Complete This Project:
 
-- ### It took me 4 hours to complete this project
+- ### It took me 4 hours to complete this project and 30 minutes to make it responsive
 
 <br>
 

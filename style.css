@@ -127,6 +127,7 @@ nav .fa-bars {
 
   #nav-logo {
     margin-left: 0;
+    width: 12rem;
   }
   nav {
     justify-content: space-between;
